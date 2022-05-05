@@ -17,15 +17,32 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   border-radius: 15px;
 }
 
-.navbar
+ul
 {
-  top:0;
-  position:fixed;
-  background-color:#9e9e9e7a;
+  list-style-type: none;
   margin: 0;
-  padding:0.25em;
-  
-  width: 15%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li
+{
+  float: left;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover 
+{
+  background-color: #111;
 }
   
 .skill 
@@ -98,13 +115,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <body>
 
 <!-- Navbar -->
-  <div class="navbar">
-    <a href="#About" style="width:25% !important">ABOUT</a>
-    <a href="#Skills" style="width:25% !important">SKILLS</a>
-    <a href="#Internship" style="width:25% !important">INTERNSHIP</a>
-    <a href="#Education" style="width:25% !important">EDUCATION</a>
-    <a href="#Contact" style="width:25% !important">CONTACT</a>
-  </div>
+  <ul>
+    <li><a href="#About" style="width:25% !important">ABOUT</a></li>
+    <li><a href="#Skills" style="width:25% !important">SKILLS</a></li>
+    <li><a href="#Internship" style="width:25% !important">INTERNSHIP</a></li>
+    <li><a href="#Education" style="width:25% !important">EDUCATION</a></li>
+    <li><a href="#Contact" style="width:25% !important">CONTACT</a></li>
+  </ul>
 </div>
 
 <!-- Page Content -->
