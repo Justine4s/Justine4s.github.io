@@ -30,30 +30,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   top: 0;
 }*/
 
-.navbar
+nav
 {
   display: flex;
   width: 100%;
   height: 70%;
   justify-content: space-around;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
-li
+nav a 
 {
-  float: left;
-}
-
-li a 
-{
-  display: block;
   color: white;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
 
-li a:hover 
+nav a:hover 
 {
   background-color: rgb(255, 0, 0);
 }
@@ -128,15 +124,13 @@ li a:hover
 <body>
 
 <!-- Navbar -->
-<div class="navbar">
-  <ul>
-    <li><a href="#About">ABOUT</a></li>
-    <li><a href="#Skills">SKILLS</a></li>
-    <li><a href="#Internship">INTERNSHIP</a></li>
-    <li><a href="#Education">EDUCATION</a></li>
-    <li><a href="#Contact">CONTACT</a></li>
-  </ul>
-</div>
+<nav>
+  <a href="#About">ABOUT</a>
+  <a href="#Skills">SKILLS</a>
+  <a href="#Internship">INTERNSHIP</a>
+  <a href="#Education">EDUCATION</a>
+  <a href="#Contact">CONTACT</a>
+</nav>
 
 <!-- Page Content -->
 <div id="main">
