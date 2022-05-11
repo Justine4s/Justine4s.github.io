@@ -18,11 +18,28 @@ body, h1,h1,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar_tel a {display: none;} /* affichage dans le composant 3 points */
-  .navbar_tel a.icon { /* position icône quand on click pas dessus */
+@media screen and (max-width: 600px) 
+{
+  .navbar_tel a  /* affichage dans le composant 3 points */
+  {
+    display: none;
+  }
+
+  .navbar_tel a.icon /* position icône quand on click pas dessus */
+  { 
     float: right;
     display: block;
+  }
+
+  #image_contact
+  {
+    height:"20";
+    width:"20";
+  }
+
+  #text_contact
+  {
+    font-size: 13px;
   }
 }
 
@@ -362,26 +379,26 @@ nav a:hover
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <img src="image/maison.png" height="50" width="50" class="float-right" style="margin-right: 80px;;">
+            <img src="image/maison.png" height="50" width="50" class="float-right" style="margin-right: 80px;" id="image_contact">
           </div>
           <div class="col-6">
-            <p class="float-left" style="margin-left: 25px; font-size: 25px;">20 rue de Witry, <br/>51420 Cernay-lès-Reims</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <img src="image/telephone.png" height="50" width="50" class="float-right" style="margin-right: 80px;">
-          </div>
-          <div class="col-6">
-            <p class="float-left" style="margin-left: 25px; font-size: 25px;">+33-6-67-20-75-14</p>
+            <p class="float-left" style="margin-left: 25px; font-size: 25px;" id="text_contact">20 rue de Witry, <br/>51420 Cernay-lès-Reims</p>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
-            <img src="image/lettre.png" height="50" width="50" class="float-right" style="margin-right: 80px;"> <!-- HSPACE="35" -->
+            <img src="image/telephone.png" height="50" width="50" class="float-right" style="margin-right: 80px;" id="image_contact">
           </div>
           <div class="col-6">
-            <p class="float-left" style="margin-left: 25px; font-size: 25px; margin-bottom:50px">justine.quatresols@viacesi.fr</p>
+            <p class="float-left" style="margin-left: 25px; font-size: 25px;" id="text_contact">+33-6-67-20-75-14</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img src="image/lettre.png" height="50" width="50" class="float-right" style="margin-right: 80px;" id="image_contact"> <!-- HSPACE="35" -->
+          </div>
+          <div class="col-6">
+            <p class="float-left" style="margin-left: 25px; font-size: 25px; margin-bottom:50px" id="text_contact">justine.quatresols@viacesi.fr</p>
           </div>
         </div>
       </div>
