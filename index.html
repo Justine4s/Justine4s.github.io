@@ -108,12 +108,15 @@ nav a:hover
 <body>
 
 <!-- Navbar -->
-<nav class="navbar_tel">
+<nav class="navbar_tel" id="navbar_tel_id">
   <a href="#About">ABOUT</a>
   <a href="#Skills">SKILLS</a>
   <a href="#Internship">INTERNSHIP</a>
   <a href="#Education">EDUCATION</a>
   <a href="#Contact">CONTACT</a>
+  <a href="javascript:void(0);" class="icon" onclick="Petit_points()">
+    <i class="fa fa-bars"></i>
+  </a>
 </nav>
 
 <!-- Page Content -->
@@ -384,6 +387,17 @@ nav a:hover
 
 <!-- END PAGE CONTENT -->
 </div>
+
+<script>
+  function Petit_points() {
+    var x = document.getElementById("navbar_tel_id");
+    if (x.className === "navbar_tel") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar_tel";
+    }
+  }
+  </script>
 
 </body>
 </html>
